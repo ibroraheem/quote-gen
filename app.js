@@ -7,13 +7,13 @@ twitterBtn = document.querySelector(".twitter"),
 synth = speechSynthesis;
 
 function randomQuote(){
-    quoteBtn.classList.add("loading");
-    quoteBtn.innerText = "Loading Quote...";
+    // quoteBtn.classList.add("loading");
+    // quoteBtn.innerText = "Loading Quote...";
     fetch("http://api.quotable.io/random").then(response => response.json()).then(result => {
         quoteText.innerText = result.content;
         authorName.innerText = result.author;
-        quoteBtn.classList.remove("loading");
-        quoteBtn.innerText = "New Quote";
+        // quoteBtn.classList.remove("loading");
+        // quoteBtn.innerText = "New Quote";
     });
 }
 
